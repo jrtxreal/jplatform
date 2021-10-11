@@ -1,0 +1,96 @@
+.el-container {
+    height: 100%;
+}
+.el-aside{
+    padding: 20px;
+    border-right: 1px solid #DCDFE6 !important;
+    /* height: 100%; */
+    display: block;
+    position: relative;
+    overflow-y: scroll;
+}
+
+// form表单样式 start
+.el-form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+// form end
+
+//文字样式
+.text-right{
+    text-align: right;
+}
+.padding{
+    padding: 20px;
+}
+.padding-lr{
+    min-height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.padding-tb{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.padding-bottom{
+    padding-bottom: 20px;
+}
+.padding-lr-sm{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.margin{
+    margin: 20px;
+}
+.margin{
+    margin: 20px;
+}
+.margin-lr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.margin-tb{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.margin-bottom{
+    margin-bottom: 20px;
+}
+.margin-lr-sm{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.margin-tb-sm{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.border{
+    border: 1px solid #DCDFE6;
+}
+.border-left{
+    border-left: 1px solid #DCDFE6;
+}
+.border-right{
+    border-right: 1px solid #DCDFE6;
+}
+.border-bottom{
+    border-bottom: 1px solid #DCDFE6;
+}
+.border-top{
+    border-top: 1px solid #DCDFE6;
+}
+
+//布局
+// .flex{
+//     display: flex;
+// }
+.align-center {
+    display: flex;
+    align-items: center; /*定义body的元素垂直居中*/
+}

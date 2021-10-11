@@ -1,0 +1,38 @@
+.oprate {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.ascription {
+  margin: 20px 0px 10px;
+}
+
+.el-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  justify-content: flex-end;
+  margin: 16px 0;
+  padding: 0 !important;
+  white-space: nowrap;
+  color: #303133;
+  font-weight: 700;
+}
+.btn-next {
+  margin: 0px !important;
+}
+
+.el-dialog {
+  width: 600px !important;
+
+  .el-form {
+    .el-form-item__content {
+      width: 300px !important;
+
+      .el-cascader {
+        width: 100%;
+      }
+    }
+  }
+}

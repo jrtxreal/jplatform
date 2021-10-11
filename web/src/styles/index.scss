@@ -1,0 +1,33 @@
+
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  scrollbar-color:#2a333c #ffffff;
+  scrollbar-width:thin;
+  ::-webkit-scrollbar
+  {
+    width: 8px;
+    height: 8px;
+    background-color: #FFFFFF;
+  }
+  ::-webkit-scrollbar-thumb
+  {
+    background-color: #2a333c;
+  }
+}
+
+#app {
+  height: 100%;
+  .el-dialog__wrapper{
+    overflow: hidden!important;
+  }
+}

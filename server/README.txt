@@ -1,0 +1,70 @@
+基础研发平台L0
+===============================
+1.框架结构
+    主框架构由controller、service、data、common四部分构成
+    controller负责边界信息交换
+    service负责计算，无数据，无状态
+    data负责存、取数据和状态保持
+    common为controller、service、data提供公共工具和模型
+    controller、service和data像平面上的三个同心圆环
+    conroller是最外层的圆环
+    service是中间层的圆环
+    data是最内层的圆环
+    信息由内向外传递要依次经过data、service、controller
+    信息由外向内传递要依次经过controller、service、data
+    common像承载三个同心圆的平面
+2.依赖关系
+    controller-->service-->data
+    controller-->common
+    service-->common
+    data-->common
+    controller、service、data依赖关系必须建立在接口上
+3.基路径
+    com.platform
+    com.platform.controller
+    com.platform.service
+    com.platform.data
+    com.platform.common
+4.包划分
+    可能出现的二级包名有：
+    impl、config、def、util、vo、bo、dto、do、pojo
+    controller层二级包名：config、def、
+    service层二级包名：config、def、pojo、dto、bo、impl、vo
+    data层二级包名：config、def、pojo、do、impl
+    common层二级包名：util、bo、dto、pojo
+    由于controller、service、data依赖关系必须建立在接口上，所以
+    如果模型同时被controller、service、data中的多个层依赖时，必须将模型放到common中
+    外部包名：当系统要重写jar包内的类或接口时，该类或接口与哪层关系最紧密就放在那一层
+5.系统构件
+    代理：nginx
+    消息队列：rabbitmq
+    内存数据：redis
+    文档数据：mongodb
+    关系数据：mysql
+6.命名规范
+    类或接口命名约束：必须是名称，要表明类的功能
+    方法命名约束：必须是动词，且只有一个动词（SRP单一职责原则），要表明动作的目的
+    方法命名的特殊约束：直接从K,V模型中取值用get，需要从数据库中查询单个条目用find，需要从数据库中查询多个条目用quary
+    变量命名约束：名词或数学变量表示，如：userInfo，在循环中使用i,j,k，在空间上使用x,y,z
+    变量命名特殊约束：不能使用重复累加的变量名，如：map、map1、map2
+    命名缩写约束：不能使用中英文混合缩写
+    缩写表：https://www.abbreviations.com/abbreviation/Terminal，没有查到尽量不要使用缩写，可以考虑用其他单词代替。
+7.注释规范
+    方法名上必须要有注释，要注明参数的含义，方法的逻辑
+    方法体内的复杂逻辑块必须要有注释，要注明参与此逻辑块的变量及变量含义，要注明逻辑块的逻辑
+
+基础研发平台L1
+===============================
+基于L0，增加了系统管理子系统
+包括以下模块：
+1.认证授权
+2.用户登录
+3.用户管理
+4.角色管理
+5.资源管理
+6.权限管理
+7.组织管理
+8.字典管理
+9.软件授权
+
+

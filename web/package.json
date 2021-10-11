@@ -1,0 +1,50 @@
+{
+  "name": "paperless_client_web2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.11.1",
+    "crypto-js": "^3.1.9-1",
+    "echarts": "^4.9.0",
+    "element-ui": "^2.15.1",
+    "fibers": "^4.0.3",
+    "js-base64": "^2.6.4",
+    "jsencrypt": "^3.2.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "mxgraph": "^4.2.2",
+    "normalize.css": "7.0.0",
+    "nprogress": "0.2.0",
+    "path-to-regexp": "2.4.0",
+    "picomatch": "^2.2.3",
+    "regenerator-runtime": "^0.13.7",
+    "sass": "^1.32.12",
+    "vue": "^2.6.12",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2",
+    "vuex-persistedstate": "^2.7.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.12",
+    "@vue/cli-service": "^4.5.12",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^4.1.1",
+    "less-loader": "^7.3.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "svg-baker-runtime": "^1.4.7",
+    "svg-sprite-loader": "4.1.3",
+    "svgo": "1.2.2",
+    "svgo-loader": "^2.2.2",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

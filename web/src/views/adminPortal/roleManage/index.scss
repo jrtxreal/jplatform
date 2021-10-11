@@ -1,0 +1,33 @@
+.role-contain {
+  height: 100%;
+  flex: 1;
+  padding: 30px 10px;
+  display: flex;
+
+  .el-divider--vertical {
+    height: 100%;
+  }
+}
+
+.role-left {
+  width: 200px;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+  .left-buttom {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+.role-right {
+  height: 100%;
+  padding: 10px 10px;
+  flex: 1;
+}
+
+.el-tree-node__expand-icon {
+  display: none !important;
+}

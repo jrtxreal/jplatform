@@ -1,0 +1,31 @@
+.role-detail {
+}
+
+.ascription {
+  margin: 20px 0px 10px;
+}
+
+.editWarp {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 0px 0px;
+
+  .oprate {
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 0 15px;
+  }
+}
+
+.el-form {
+  .el-form-item {
+    .el-input {
+      width: 100% !important;
+    }
+
+    .el-cascader {
+      width: 100% !important;
+    }
+  }
+}
